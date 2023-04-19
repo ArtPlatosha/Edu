@@ -116,3 +116,19 @@ section{
 #menu-btn {
 	display: none;
 }
+
+.header .login-form {
+	position: absolute;
+	top: 115%;
+	right: -105%;
+	background-color: var(--white);
+	box-shadow: .5rem;
+	width: 35rem;
+	box-shadow: var(--box-shadow);
+	padding: 2rem;
+}
+
+.header .login-form.active {	
+	right: 2rem;
+	transition: .4s linear;
+}
