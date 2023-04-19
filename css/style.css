@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
+
+:root{
+	--primary-color: #12c2b9;
+	--secondary: #dbfffe;
+	--black: #141414;
+	--white: #fff;
+	--box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
