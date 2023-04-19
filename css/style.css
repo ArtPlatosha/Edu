@@ -467,3 +467,73 @@ section{
 	color: var(--primary-color);
 	padding-right: .5rem;
 }
+
+.teacher .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 2rem;
+}
+
+.teacher .box-container .box {
+	background-color: var(--white);
+	box-shadow: var(--box-shadow);
+	border-radius: .5rem;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+.teacher .box-container .box .image {
+	position: relative;
+	overflow: hidden;
+}
+
+.teacher .box-container .box .image img {
+	background-color: var(--secondary);
+	width: 100%;
+}
+
+.teacher .box-container .box:hover .image .share {
+	bottom: 0;
+}
+
+.teacher .box-container .box .image .share {
+	position: absolute;
+	bottom: -10rem;
+	left: 0;
+	right: 0;
+	padding: 2rem;
+}
+
+.teacher .box-container .box .image .share a {
+	height: 4rem;
+	width: 4rem;
+	line-height: 4rem;
+	font-size: 2rem;
+	margin: 0 1rem;
+	color: var(--secondary);
+	background-color: var(--primary-color);
+	border-radius: .5rem;
+}
+
+.teacher .box-container .box .image .share a:hover {
+	color: var(--primary-color);
+	background-color: var(--secondary);
+}
+
+.teacher .box-container .box .content {
+	padding: 2rem;
+	padding-top: 1rem;
+	align-items: center;
+}
+
+.teacher .box-container .box .content h3 {
+	font-size: 2rem;
+	color: var(--black);
+}
+
+.teacher .box-container .box .content span {
+	font-size: 1.5rem;
+	line-height: 2;
+	color: #777;
+}
