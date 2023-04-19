@@ -219,3 +219,29 @@ section{
 	color: var(--black);
 	cursor: pointer;
 }
+
+.home {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url('../images/home.jpg') no-repeat;
+	background-size: cover;
+	background-position: center
+}
+
+.home .content {
+	max-width: 50%;
+}
+
+.home .content h3 {
+	font-size: 5rem;
+	color: var(--white);
+	line-height: 1.2;
+}
+
+.home .content p {
+	font-size: 1.5rem;
+	line-height: 2;
+	color: var(--white);
+	padding: 1rem 0;
+}
