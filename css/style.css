@@ -43,6 +43,63 @@ section{
 	padding: 5rem 7%;
 }
 
+.btn {
+	position: relative;
+	display: inline-block;
+	margin-top: 1rem;
+	color: var(--primary-color);
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	max-width: max-content;
+	border: .1rem solid var(--primary-color);
+	background-color: var(--secondary);
+	padding: 1.2rem 4.5rem;
+	overflow: hidden;
+	z-index: 1;
+	border-radius: .5rem;
+}
+
+.btn::before {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200%;
+	height: 200%;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	transition: 500ms ease;
+	z-index: -1;
+}
+
+.btn .text {
+	transition: 250ms ease;
+}
+
+.btn .text-2 {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: scaleX(-50%);
+	max-width: max-content;
+	color: var(--secondary);
+}
+
+.btn:is(:hover, :focus-visible)::before {
+	bottom: -50%;
+}
+
+.btn:is(:hover, :focus-visible) .text-1 {
+	transform: translateY(-4rem);
+}
+
+.btn:is(:hover, :focus-visible) .text-2 {
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .header {
 	position: fixed;
 	top: 0;
@@ -131,4 +188,34 @@ section{
 .header .login-form.active {	
 	right: 2rem;
 	transition: .4s linear;
+}
+
+.header .login-form h3 {
+	font-size: 2.2rem;
+	color: var(--black);
+	text-align: center;
+	margin-bottom: 0.7rem;
+}
+
+.header .login-form .box {
+	font-size: 1.5rem;
+	margin: .7rem 0;
+	border: 0.1rem solid rgba(0, 0, 0, 0.1);
+	padding: 1rem 1.2rem;
+	color: var(--black);
+	text-transform: none;
+	width: 100%;
+}
+
+.header .login-form .remember {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	margin: .7rem 0;
+}
+
+.header .login-form .remember label {
+	font-size: 1.5rem;
+	color: var(--black);
+	cursor: pointer;
 }
