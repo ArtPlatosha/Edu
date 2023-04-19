@@ -43,6 +43,25 @@ section{
 	padding: 5rem 7%;
 }
 
+.heading {
+	position: relative;
+	color: var(--primary-color);
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .4rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.heading::after {
+	content: url('../images/separator.svg');
+	display: block;
+	width: 10rem;
+	margin-inline: auto;
+	margin-top: -1rem;
+}
+
 .btn {
 	position: relative;
 	display: inline-block;
@@ -244,4 +263,45 @@ section{
 	line-height: 2;
 	color: var(--white);
 	padding: 1rem 0;
+}
+
+.about .container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about .container .about-image {
+	position: relative;
+	flex: 1 1 40rem;
+}
+
+.about .container .about-image img {
+	width: 80%;
+}
+
+.about .container .about-image .about-img {
+	position: absolute;
+	bottom: -10rem;
+	right: -1rem;
+	width: 25rem;
+	padding-block: 5rem;
+}
+
+.about .container .about-content {
+	flex: 1 1 50rem;
+	padding-left: 6rem;
+	padding-top: 8rem;
+}
+
+.about .container .about-content h3 {
+	font-size: 3rem;
+	color: var(--primary-color);
+
+}
+
+.about .container .about-content p {
+	font-size: 1.6rem;
+	color: #444;
+	padding: 1rem 0;
+	line-height: 1.8;
 }
