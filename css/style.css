@@ -102,7 +102,7 @@ section{
 	top: 100%;
 	left: 50%;
 	transform: scaleX(-50%);
-	max-width: max-content;
+	min-width: max-content;
 	color: var(--secondary);
 }
 
@@ -684,4 +684,48 @@ section{
 	color: var(--black);
 	line-height: 2;
 	padding: 1rem 0;
+}
+
+.contact .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 2rem;
+}
+
+.contact .row .image {
+	flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+	width: 100%;
+}
+
+.contact .row form {
+	flex: 1 1 40rem;
+	border: 0.1rem solid var(--primary-color);
+	padding: 2rem;
+}
+
+.contact .row form h3 {
+	font-size: 2.5rem;
+	color: #444;
+	padding-bottom: 1rem;
+}
+
+.contact .row form .box {
+	width: 100%;
+	font-size: 1.6rem;
+	padding: 1.2rem 1.4rem;
+	border: .1rem solid var(--primary-color);
+	margin: .7rem 0;
+}
+
+.contact .row form .box:focus {
+	color: var(--primary-color);
+}
+
+.contact .row form textarea {
+	height: 15rem;
+	resize: none;
 }
