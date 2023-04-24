@@ -797,3 +797,38 @@ section{
 	color: var(--black);
 	border-top: .1rem solid var(--primary-color);
 }
+
+@media (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+
+	.header {
+		padding: 2rem 4rem;
+	}
+
+	section {
+		padding: 3rem 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	#menu-btn {
+		display: inline-block;
+	}
+
+	.heaedr .navbar {
+		position: absolute;
+		top: 110%;
+		right: -110%;
+		width: 30rem;
+		box-shadow: var(--box-shadow);
+		border-radius: .5rem;
+		background-color: var(--white);
+	}
+
+	.header .navbar.active {
+		right: 2rem;
+		transition: .4s linear;
+	}
+}
