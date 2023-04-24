@@ -729,3 +729,71 @@ section{
 	height: 15rem;
 	resize: none;
 }
+
+.footer {
+	background-color: var(--secondary);
+	text-align: center;
+}
+
+.footer .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+	font-size: 2.2rem;
+	color: var(--primary-color);
+	padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+	font-size: 1.5rem;
+	color: var(--black);
+	line-height: 2;
+	padding: 1rem 0;
+}
+
+.footer .box-container .box .share {
+	margin-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+	height: 4.5rem;
+	width: 4.5rem;
+	line-height: 4.5rem;
+	border-radius: 10%;
+	font-size: 1.7rem;
+	border: .1rem solid var(--primary-color);
+	color: var(--primary-color);
+	margin-right: .3rem;
+	text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
+.footer .box-container .box .link {
+	font-size: 1.7rem;
+	line-height: 2;
+	color: var(--black);
+	padding: .5rem 0;
+	text-transform: none;
+	display: block;
+}
+
+.footer .box-container .box .link:hover {
+	color: var(--primary-color);
+	text-decoration: underline;
+}
+
+.footer .credit {
+	font-size: 2rem;
+	margin-top: 3rem;
+	padding-top: 3rem;
+	text-align: center;
+	color: var(--black);
+	border-top: .1rem solid var(--primary-color);
+}
