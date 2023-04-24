@@ -798,37 +798,59 @@ section{
 	border-top: .1rem solid var(--primary-color);
 }
 
-@media (max-width: 991px) {
-	html {
-		font-size: 55%;
-	}
+@media (max-width:991px) {
 
-	.header {
-		padding: 2rem 4rem;
-	}
-
-	section {
-		padding: 3rem 2rem;
-	}
+html {
+	font-size: 55%;
 }
 
-@media (max-width: 768px) {
-	#menu-btn {
-		display: inline-block;
-	}
+.header {
+	padding: 2rem 4rem;
+}
 
-	.heaedr .navbar {
-		position: absolute;
-		/* top: 110%; */
-		/* right: -110%; */
-		width: 30rem;
-		box-shadow: var(--box-shadow);
-		border-radius: .5rem;
-		background-color: var(--white);
-	}
+section {
+	padding: 3rem 2rem;
+}
 
-	.header .navbar.active {
-		right: 2rem;
-		transition: .4s linear;
-	}
+}
+
+@media (max-width:768px) {
+
+#menu-btn {
+	display: inline-block;
+}
+
+.header .navbar {
+	position: absolute;
+	top: 110%; right: -110%;
+	width: 30rem;
+	box-shadow: var(--box-shadow);
+	border-radius: .5rem;
+	background: var(--white);
+}
+
+.header .navbar.active {
+	right: 2rem;
+	transition: .4s linear;
+}
+
+.header .navbar a {
+	font-size: 2rem;
+	margin: 1rem 2.5rem;
+	display: block;
+}
+
+.home .content h3 {
+	font-size: 3rem;
+}
+
+.about .container .about-content {
+	padding-left: 0;
+}
+}
+
+@media (max-width:450px) {
+html {
+	font-size: 50%;
+}
 }
