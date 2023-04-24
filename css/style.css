@@ -613,3 +613,75 @@ section{
 	font-size: 1.3rem;
 	color: var(--primary-color);
 }
+
+.blog .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 1.5rem;
+}
+
+.blog .box-container .box {
+	box-shadow: var(--box-shadow);
+	border-radius: 2rem;
+}
+
+.blog .box-container .box .image {
+	height: 25rem;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 2rem 2rem 0 0;
+}
+
+.blog .box-container .box .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.blog .box-container .box:hover .image img {
+	transform: scale(1.1);
+}
+
+.blog .box-container .box .image h3 {
+	font-size: 1.5rem;
+	color: #444;
+	position: absolute;
+	top: 1.5rem;
+	left: 1rem;
+	padding: .5rem 1.5rem;
+	background-color: var(--white);
+	border-radius: 2rem 0 2rem 0;
+}
+
+.blog .box-container .box .content {
+	padding: 2rem 2rem;
+	background-color: var(--secondary);
+	border-radius: 0 0 2rem 2rem;
+}
+
+.blog .box-container .box .content .icons {
+	margin-bottom: 1rem;
+	align-items: center;
+}
+
+.blog .box-container .box .content .icons a {
+	font-size: 1.4rem;
+	color: var(--primary-color);
+}
+
+.blog .box-container .box .content .icons a i {
+	padding-right: .5rem;
+}
+
+.blog .box-container .box .content h3 {
+	font-size: 2.2rem;
+	color: var(--black);
+}
+
+.blog .box-container .box .content p {
+	font-size: 1.5rem;
+	color: var(--black);
+	line-height: 2;
+	padding: 1rem 0;
+}
