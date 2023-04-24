@@ -819,8 +819,8 @@ section{
 
 	.heaedr .navbar {
 		position: absolute;
-		top: 110%;
-		right: -110%;
+		/* top: 110%; */
+		/* right: -110%; */
 		width: 30rem;
 		box-shadow: var(--box-shadow);
 		border-radius: .5rem;
